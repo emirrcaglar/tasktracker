@@ -1,6 +1,6 @@
 ## Task Tracker CLI App
 
->this is a project based on https://roadmap.sh/projects/github-user-activity
+>this is a project based on https://roadmap.sh/projects/task-tracker
 >
                commands available:
               - add "task_desc"
