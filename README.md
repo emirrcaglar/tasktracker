@@ -1,7 +1,7 @@
 ## Task Tracker CLI App
 
->this is a project based on https://roadmap.sh/projects/task-tracker
->
+> this is a project based on https://roadmap.sh/projects/task-tracker
+
                commands available:
               - add "task_desc"
               - update task_id
