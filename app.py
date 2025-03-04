@@ -8,7 +8,6 @@ def create_data(name):
     }
     return data
 
-# Step 1: Read the existing JSON data from the file
 def readfile(json_file):
     try:
         with open(json_file, 'r') as file:
@@ -19,20 +18,15 @@ def readfile(json_file):
     except:
         return []
     
-def write_file(json_file):
-    # Step 3: Write the updated JSON object back to the file
+def write_file(data, json_file):
     with open(json_file, 'w') as file:
         json.dump(data, file, indent=4)
 
-def add_task(data, json_file):
+def main():
     new_data = create_data("Emir")
-    data = readfile(json_file)
+    data = readfile(JSON_FILE)
     data.append(new_data)
-    write_file(json_file)
+    write_file(data, JSON_FILE)
 
-# Step 2: Append the new data to the existing JSON object (assuming it's a list)
-new_data = create_data("Emir")
-data = readfile(JSON_FILE)
-data.append(new_data)
-write_file(JSON_FILE)
-
+if __name__ == '__main__':
+    main()
